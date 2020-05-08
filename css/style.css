@@ -700,6 +700,7 @@ a:hover{
 }
 
 .apple{
+  text-align: center;
   width: 219px;
   height: 61px;
   border-radius: 5px;
@@ -737,6 +738,7 @@ a:hover{
 }
 
 .play{
+  text-align: center;
   width: 219px;
   height: 61px;
   border-radius: 5px;

@@ -57,7 +57,7 @@
   <section class="menu-table">
     <div class="container">
       <div class="row">
-        <div class="col-xl-6 col-lg-6">
+        <div class="col-xl-6 col-lg-6 col-md-6  col-sm-12">
           <h2 class="title menu-table__title">Food Menu</h2>
           <div class="menu-table__item">
             <div class="text">
@@ -97,7 +97,7 @@
           </div>
           <a href="" class="btn menu-table__btn">Explor food menu</a>
         </div>
-        <div class="col-xl-6 col-lg-6">
+        <div class="col-xl-6 col-lg-6 col-md-6">
           <h2 class="title menu-table__title_2">Today Special</h2>
           <div class="photos">
             <div class="photos-right">
@@ -121,7 +121,7 @@
         <div class="col-xl-12">
           <h2 class="title reserve__title">Reserve your table</h2>
         </div>
-      <div class="col-xl-10 m-auto">
+      <div class="col-xl-10 m-auto col-lg-12 col-md-12 col-sm-12">
         <form action="" class="form">
           <input class="input name" type="text" placeholder="Name*">
           <input class="input email" type="text" placeholder="Email address*">
@@ -258,7 +258,7 @@
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-xl-3 col-lg-3 text-left">
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 text-left">
           <h3 class="footer__title">Navigation</h3>
           <ul class="footer-menu">
             <li class="footer-menu__item"><a href="" class="footer-menu__link">Home</a></li>
@@ -270,20 +270,7 @@
             <li class="footer-menu__item"><a href="" class="footer-menu__link">Contact Us</a></li>
           </ul>
         </div>
-        <div class="col-xl-5 col-lg-5">
-          <h3 class="footer__title">News letter</h3>
-          <p class="footer__subtitle">Enter your email address and subscribe daily newsletter</p>
-          <form action="" class="footer__form">
-            <input type="text" placeholder="Email Address" class="footer__email">
-            <a href="" class="form__btn">Subscribe</a>
-          </form>
-          <div class="shares">
-            <i class="fa fa-facebook share"></i>
-            <i class="fa fa-twitter share"></i>
-            <i class="fa fa-google-plus share"></i>
-          </div>
-        </div>
-        <div class="col-xl-4 col-lg-4">
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
           <h3 class="footer__title">Our app avilable</h3>
           <div class="apple">
             <i class="fa fa-apple" aria-hidden="true"></i>
@@ -294,6 +281,19 @@
             <img src="images/play__market.png" alt="" class="fa-play">
             <p class="play__title">Get it on
               <span class="play__subtitle">Google Play</span></p>
+          </div>
+        </div>
+        <div class="col-xl-5 col-lg-4 col-md-12 col-sm-12">
+          <h3 class="footer__title">News letter</h3>
+          <p class="footer__subtitle">Enter your email address and subscribe daily newsletter</p>
+          <form action="" class="footer__form">
+            <input type="text" placeholder="Email Address" class="footer__email">
+            <a href="" class="form__btn">Subscribe</a>
+          </form>
+          <div class="shares">
+            <i class="fa fa-facebook share"></i>
+            <i class="fa fa-twitter share"></i>
+            <i class="fa fa-google-plus share"></i>
           </div>
         </div>
       </div>
@@ -327,7 +327,7 @@
   <script type="text/javascript">
     $(document).ready(function(){
       $('.our__slider').slick({
-        autoplay:true,
+        autoplay: false,
         speed: 2000,
         slidesToShow: 5,
         slidesToScroll: 5,
@@ -335,33 +335,14 @@
         arrows: false,
         infinite: true,
         cssEase: 'linear',
-        responsive: [
-    {
-      breakpoint: 1198.98,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 911.98,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 767.98,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-        // centerMode: true, 
-        // centerPadding: '100px'
-  ]
+        responsive:[
+          {breakpoint: 1198.98,
+            settings:{slidesToShow: 3,slidesToScroll: 3,infinite: true,dots: true}},
+          {breakpoint: 911.98,
+            settings:{slidesToShow: 2,slidesToScroll: 2,centerMode: true}},
+          {breakpoint: 767.98,
+            settings:{slidesToShow: 1,slidesToScroll: 1,centerMode: true, centerPadding: '180px'}}
+        ]
       });
     });
   </script>
