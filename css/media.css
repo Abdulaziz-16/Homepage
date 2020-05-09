@@ -449,7 +449,7 @@
 @media (max-width: 575.98px){
   .nav{
     padding: 10px 0;
-    width: 510px;
+    width: 400px;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -487,27 +487,26 @@
   
  
   .nav__title{
-    margin: 200px auto 150px;
-    width: 400px;
-    font-size: 45px;
+    margin: 150px auto 100px;
+    width: 220px;
+    font-size: 25px;
     line-height: 1.2;
   }
   
   .nav__title_size{
-    font-size: 35px;
+    font-size: 15px;
   }
   
   .arrows__arrow_left{
-    font-size: 70px;
+    font-size: 50px;
     position: absolute;
     top: 45%;
   }
   
   .arrows__arrow_right{
-    font-size: 70px;
+    font-size: 50px;
     position: absolute;
     top: 45%;
-    right: 0;
   }
   
   .title{
