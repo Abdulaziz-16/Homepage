@@ -487,6 +487,9 @@
     padding-right: 5px;
   }
   
+  .happy{
+    padding: 50px;
+  }
  
   .nav__title{
     margin: 150px auto 100px;
@@ -512,7 +515,7 @@
   }
   
   .title{
-    font-size: 30px;
+    font-size: 20px;
   }
   
   .menu-table__item{
@@ -547,6 +550,9 @@
     font-size: 12px;
   }
   
+  .client{
+    font-size: 12px;
+  }
 .clients__subtitle{
   margin-bottom: 25px;
   font-size: 11.97px;
@@ -578,6 +584,14 @@
   .photos-right:hover{
     transform: scale(1.1);
     z-index: 1;
+  }
+  
+  .happy__photo{
+    height: 100px;
+  }
+  
+  .clients__subtitle{
+    font-size: 9px;
   }
   
   .photo{
